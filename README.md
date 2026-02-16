@@ -1,3 +1,6 @@
+> [!WARNING]
+> ⚠️ This code is no longer maintained by me, as I'm no longer using OctoPrint for my 3D printer. Feel free to fork and continue development.
+
 # OctoPrint PSU Control - Home Assistant
 Adds Home Assistant support to OctoPrint-PSUControl as a sub-plugin
 
@@ -25,3 +28,4 @@ Please check your logs first. If they do not explain your issue, open an issue i
 ## Todo
 - [x] Add descriptions to settings page
 - [ ] Add images to documentation
+
