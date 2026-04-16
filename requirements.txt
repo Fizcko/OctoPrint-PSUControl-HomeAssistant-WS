@@ -1,1 +1,2 @@
 OctoPrint
+websockets>=11.0

@@ -1,16 +1,24 @@
 # coding=utf-8
+import os
 import setuptools
 
 ########################################################################################################################
 
-plugin_identifier = "psucontrol_homeassistant"
+plugin_identifier = "psucontrol_hass_ws"
 plugin_package = "octoprint_%s" % plugin_identifier
-plugin_name = "OctoPrint-PSUControl-HomeAssistant"
-plugin_version = "1.0.6"
+plugin_name = "OctoPrint-PSUControl-HomeAssistant-WS"
+
+_here = os.path.abspath(os.path.dirname(__file__))
+_version_file = os.path.join(_here, "VERSION")
+if os.path.exists(_version_file):
+    with open(_version_file) as _vf:
+        plugin_version = _vf.read().strip()
+else:
+    plugin_version = "0.0.0"
 plugin_description = "Adds Home Assistant support to OctoPrint-PSUControl as a sub-plugin"
-plugin_author = "Erik de Keijzer"
-plugin_author_email = "erik.de.keijzer@gmail.com"
-plugin_url = "https://github.com/edekeijzer/OctoPrint-PSUControl-HomeAssistant"
+plugin_author = "Fizcko"
+plugin_author_email = ""
+plugin_url = "https://github.com/fizcko/OctoPrint-PSUControl-HomeAssistant-WS"
 plugin_license = "AGPLv3"
 plugin_additional_data = []
 
